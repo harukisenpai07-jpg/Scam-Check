@@ -43,10 +43,10 @@ export default function Home() {
       <main className="flex-1 w-full max-w-4xl mx-auto px-4 py-8 md:py-12">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-            Is this message a scam?
+            ဒါက ငွေလိမ်တဲ့ စာ (သို့) လင့်ခ် လား?
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Paste any suspicious text, link, or message below. Our AI and security tools will check it for you.
+            သံသယရှိသော စာသား (သို့မဟုတ်) လင့်ခ်ကို အောက်ပါအကွက်တွင် ထည့်သွင်းပြီး စစ်ဆေးပါ။
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function Home() {
       </main>
 
       <footer className="w-full bg-white border-t border-gray-200 py-8 text-center text-gray-500 text-sm md:text-base mt-auto">
-        <p>Stay safe online. Always be critical of unexpected messages.</p>
+        <p>အင်တာနက်ပေါ်တွင် လုံခြုံစွာနေထိုင်ပါ။ မသင်္ကာဖွယ်ရာများကို အမြဲစစ်ဆေးပါ။</p>
         <p className="mt-2 text-xs opacity-75">Powered by Google Safe Browsing and AI</p>
       </footer>
     </div>

@@ -28,7 +28,7 @@ export default function InputForm({ onSubmit, isPending }) {
     return (
         <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto p-4 bg-white rounded-xl shadow-lg border border-gray-100 mt-6">
             <label htmlFor="message-input" className="block text-xl md:text-2xl font-semibold text-gray-800 mb-3">
-                Paste message or link here:
+                စာသား (သို့) လင့်ခ်ကို ဤနေရာတွင် ထည့်ပါ -
             </label>
 
             <div className="relative">
@@ -36,8 +36,8 @@ export default function InputForm({ onSubmit, isPending }) {
                     id="message-input"
                     value={textVal}
                     onChange={(e) => setTextVal(e.target.value)}
-                    placeholder="e.g. URGENT: Your account is locked! Click here: http://bit.ly/123"
-                    className="w-full p-4 md:p-6 text-lg md:text-xl border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-300 focus:border-blue-500 min-h-[160px] md:min-h-[200px]"
+                    placeholder="ဥပမာ - KBZ Pay ငွေကျပ် ၁ သိန်း ပေါက်ပါသည်... (သို့မဟုတ်) လင့်ခ်တစ်ခုခု ထည့်ပါ"
+                    className="w-full p-4 md:p-6 text-lg md:text-xl text-gray-900 font-medium placeholder-gray-600 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-300 focus:border-blue-500 min-h-[160px] md:min-h-[200px]"
                     disabled={isPending}
                 />
             </div>
@@ -74,7 +74,7 @@ export default function InputForm({ onSubmit, isPending }) {
                 ) : (
                     <>
                         <Send className="w-7 h-7" />
-                        Check if this is a Scam
+                        စစ်ဆေးမည်
                     </>
                 )}
             </button>
