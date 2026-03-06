@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import InputForm from "@/components/InputForm";
 import AnalysisResult from "@/components/AnalysisResult";
+import { Facebook } from "lucide-react";
 
 export default function Home() {
   const [isPending, setIsPending] = useState(false);
@@ -59,6 +60,26 @@ export default function Home() {
         )}
 
         <AnalysisResult result={result} />
+
+        {/* Promotional Banner */}
+        <div className="w-full max-w-2xl mx-auto mt-12 p-6 md:p-8 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl shadow-sm flex flex-col items-center text-center">
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 tracking-tight">
+            AI နည်းပညာများကို လေ့လာချင်ပါသလား?
+          </h3>
+          <p className="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
+            AI ကို ဘယ်လို လက်တွေ့အသုံးချမလဲ၊ AI ကြောင့် ရနိုင်တဲ့ အလုပ်အကိုင် အခွင့်အလမ်းများနှင့် နည်းပညာဗဟုသုတများကို နေ့စဉ် မျှဝေပေးနေသော ကျွန်ုပ်တို့၏ Facebook Page ကို Follow လုပ်ထားပါ။
+          </p>
+          <a
+            href="https://www.facebook.com/share/1CQe9tiAR4/?mibextid=wwXIfr"
+            /* href="https://www.facebook.com/share/1CQe9tiAR4/?mibextid=wwXIfr" */
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#166FE5] text-white font-semibold py-3 px-6 rounded-xl transition-all shadow-md hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
+          >
+            <Facebook className="w-6 h-6" />
+            Facebook Page သို့ သွားမည်
+          </a>
+        </div>
       </main>
 
       <footer className="w-full bg-white border-t border-gray-200 py-8 text-center text-gray-500 text-sm md:text-base mt-auto">
